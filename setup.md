@@ -59,3 +59,10 @@ editing ai2thor-docker/scripts/run.sh with --privileged, and removing the exampl
 sudo apt-get install xorg openbox  # in docker
 python3 scripts/startx.py 0
 export DISPLAY=:0
+
+
+If pytorch is not work (3090):
+pip install torch===1.7.1+cu110 torchvision===0.8.2+cu110 torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+<!-- conda install -c anaconda cudatoolkit
+conda install pytorch torchvision torchaudio cudatoolkit=11.2 -c pytorch
+conda install -c pytorch torchvision cudatoolkit=10.1 pytorch  -->
