@@ -48,3 +48,10 @@ apt-get install -y ubuntu-desktop
 apt-get install -y gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal -->
 
 
+Install docker following https://docs.docker.com/engine/install/ubuntu/
+
+git clone https://github.com/allenai/ai2thor-docker
+cd ai2thor-docker
+./scripts/build.sh
+editing ai2thor-docker/scripts/run.sh with --privileged
+./scripts/run.sh
