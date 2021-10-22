@@ -1,3 +1,6 @@
+cat /proc/version
+lsb_release -a
+
 apt-get --purge remove "*nvidia*"
 apt-get auto-remove && apt-get clean && apt-get update && apt-get upgrade
 cat /proc/driver/nvidia/version
@@ -27,6 +30,8 @@ source init.sh
 
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -  # only for docker bugs in installation
+sudo chmod a+r /usr/share/keyrings/docker-archive-keyring.gpg  # only for docker bugs in installation
+
 sudo apt update
 sudo apt install xrdp xfce4 tightvncserver
 echo 'deb http://archive.ubuntu.com/ubuntu/ bionic universe' >> /etc/apt/sources.list
@@ -41,3 +46,5 @@ apt-get install -y x-window-system-core
 apt-get install -y gdm3
 apt-get install -y ubuntu-desktop
 apt-get install -y gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal -->
+
+
