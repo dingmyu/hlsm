@@ -53,5 +53,9 @@ Install docker following https://docs.docker.com/engine/install/ubuntu/
 git clone https://github.com/allenai/ai2thor-docker
 cd ai2thor-docker
 ./scripts/build.sh
-editing ai2thor-docker/scripts/run.sh with --privileged
+editing ai2thor-docker/scripts/run.sh with --privileged, and removing the example.py
 ./scripts/run.sh
+
+sudo apt-get install xorg openbox  # in docker
+python3 scripts/startx.py 0
+export DISPLAY=:0
