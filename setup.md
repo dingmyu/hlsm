@@ -40,6 +40,13 @@ echo 'deb http://archive.ubuntu.com/ubuntu/ bionic universe' >> /etc/apt/sources
 apt-get install -y vnc4server
 
 ## If we use xrdp
+echo xfce4-session > ~/.xsession
+
+login on port ip:3389 with username
+
+you will have a display named rdp0
+
+## If we use xvnc
 vncserver :1
 
 vim ~/.vnc/xstartup
@@ -49,18 +56,14 @@ unset SESSION_MANAGER
 unset DBUS_SESSION_BUS_ADDRESS 
 startxfce4 & 
  
-[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup 
-[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources 
+[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
 xsetroot -solid grey
 ```
 
 vncserver -kill :1
 vncserver :1
-echo xfce4-session > ~/.xsession
 
-login on port ip:3389 with username
-
-## If we use xvnc
 login on ip (or 3389 + random passwd) and then choose vnc-any, 127.0.0.1, port 5901 with vnc passwd
 
 you can also install gnome and vim ~/.vnc/xstartup
