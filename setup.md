@@ -44,7 +44,8 @@ echo xfce4-session > ~/.xsession
 
 login on port ip:3389 with username
 
-you will have a display named rdp0
+you will have a display named rdp0, you can get the display alias by `echo $DISPLAY`
+
 
 ## If we use xvnc
 vncserver :1
