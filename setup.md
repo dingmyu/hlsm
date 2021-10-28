@@ -124,3 +124,6 @@ sudo apt-get install xorg openbox  # in docker
 python3 scripts/startx.py 0
 
 
+# BUGs
+1. Sorry, command-not-found has crashed!
+> sudo chmod o+r /var/lib/command-not-found/commands.db
