@@ -39,6 +39,8 @@ sudo apt install xrdp xfce4  # tightvncserver
 echo 'deb http://archive.ubuntu.com/ubuntu/ bionic universe' >> /etc/apt/sources.list
 apt-get install -y vnc4server
 
+sudo apt-get install xfce4-terminal  # use xfce4-terminal for better terminal experience, support copy and paste
+
 ## If we use xrdp
 echo xfce4-session > ~/.xsession
 
