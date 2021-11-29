@@ -140,6 +140,14 @@ def collect_universal_rollouts(exp_def, proc_id):
                     "done": done,
                     "remark": str(agent)
                 }
+                # print(sample)
+                # {'task': <lgp.env.alfred.tasks.AlfredTask object at 0x7f62126cb670>,
+                # 'state_repr': <lgp.models.alfred.hlsm.hlsm_state_repr.AlfredSpatialStateRepr object at 0x7f6112a2de80>,
+                # 'observation': <lgp.env.alfred.alfred_observation.AlfredObservation object at 0x7f61f791af10>,
+                # 'action': <lgp.env.alfred.alfred_action.AlfredAction object at 0x7f62126cba60>,
+                # 'reward': -0.05,
+                # 'done': False,
+                # 'remark': '<lgp.agents.alfred.demonstration_replay_agent.DemonstrationReplayAgent object at 0x7f6112a2dbb0>'}
                 rollout.append(sample)
                 observation = next_observation
 

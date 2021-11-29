@@ -110,6 +110,12 @@ pip install torch===1.7.1+cu110 torchvision===0.8.2+cu110 torchaudio===0.7.2 -f 
 conda install pytorch torchvision torchaudio cudatoolkit=11.2 -c pytorch
 conda install -c pytorch torchvision cudatoolkit=10.1 pytorch  -->
 
+pip install jupyterlab
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+/usr/bin/google-chrome
+
+jupyter lab --ip 0.0.0.0 --no-browser
 
 # Docker
 Install docker following https://docs.docker.com/engine/install/ubuntu/

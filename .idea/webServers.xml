@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4718876c-7ba6-44ab-8c8d-5c2ab4966d44" name="10.64.45.213">
+        <fileTransfer rootFolder="/home/dingmingyu/2021/hlsm" accessType="SFTP" host="10.64.45.213" port="22" sshConfigId="b9270486-99e6-4c0f-a751-468384e59bd6" sshConfig="dingmingyu@10.64.45.213:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
